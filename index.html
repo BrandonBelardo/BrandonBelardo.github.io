@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devijice-width, initial-scale=1.0">
+        <title>My input</title>
+        <script>
+            function handleInput(){
+                const userInput = document.getElementById("userInput").value;
+                document.getElementById("output").innerText = userInput
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Simple User Input</h1>
+        <input type="text" id="userInput" placeholder="Hello World!">
+        <button onclick="handleInput()">Submit</button>
+        <p>
+            Your result: 
+        </p>
+        <p id="output"></p>
+
+    </body>
+</html>
